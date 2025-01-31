@@ -10,30 +10,53 @@
             box-sizing: border-box;
         }
         header{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
             background-color: rgba(0,0,0, 0.7);
-            /* border-radius: 10px; */
             padding: 20px;
         }
         footer{
             background-color: rgba(0,0,0, 0.7);
-            /* border-radius: 10px; */
             padding: 10px;
             margin: 0;
         }
         img{
             margin: 0;
         }
+        ul, li{
+            display: inline;
+            list-style: none;
+            padding-right: 15px;
+            padding-top: 10px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 24px;
+        }
+        a:hover{
+            color: gold;
+        }
+        h1{
+            font-size: 40px;
+        }
     </style>
 </head>
 <body style="background-color: rgb(45, 124, 3);color: gold;">
     <header>
         <h1>Pizzaria do Carlão</h1>
-teste
+        <ul>
+            <li><a href="">Promoções</a></li>
+            <li><a href="">Montar pizzas</a></li>
+            <li><a href="">Cardápio</a></li>
+            <li><a href="">Sobre</a></li>
+        </ul>
     </header>
     <main>
         <img src="pizza.avif" height="470px" width="100%">
-lalala
-lalala
+
     </main>
     <footer>
         <h3>Pizzaria do Carlão</h3><br>
