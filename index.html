@@ -51,10 +51,19 @@
             align-items: center;
         }
         #menu{
-            /* margin-top: 10px; */
             background-color: gold;
             padding: 10px;
-            /* border: 1px solid; */
+        }
+        #divf1{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            color: rgb(198, 3, 3);
+        }
+        #divf2{
+            display: flex;
+            justify-content: center;
+            color: white;
         }
     </style>
 </head>
@@ -74,12 +83,27 @@
         </div>
     </header>
     <main>
-        <img src="pizza.avif" height="470px" width="100%">
+        <img src="pizza.avif" height="400px" width="100%">
 
     </main>
     <footer>
-        <h3>Pizzaria do Carlão</h3><br>
-        <h4>Desenvolvido por Carlos Augusto Fernandes Filho  <br>2025</h4>
+    <div id="divf1">
+        <div id="f1">
+            <p>Área de entrega</p>
+        </div>
+        <div id="f2">
+            <p>Atendimento</p>
+        </div>
+        <div id="f3">
+            <p>Contato</p>
+        </div>
+    </div>
+    <div id="divf2">
+        <div id="f4">
+            <p style="font-size: small;">&copy; Desenvolvido por Carlos Augusto Fernandes Filho  <br>2025</p>
+        </div>
+    </div>
+        
     </footer>
 </body>
 </html>
