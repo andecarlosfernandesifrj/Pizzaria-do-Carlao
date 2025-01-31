@@ -14,7 +14,7 @@
             flex-direction: column;
             text-align: center;
             background-color: rgba(0,0,0, 0.7);
-            padding: 20px;
+            padding: 10px;
         }
         footer{
             background-color: rgba(0,0,0, 0.7);
@@ -31,28 +31,47 @@
             padding-top: 10px;
         }
         a{
-            color: white;
+            color: black;
             text-decoration: none;
             padding: 10px;
             font-size: 24px;
         }
         a:hover{
-            color: gold;
+            color: white;
+            background-color: rgba(9, 33, 1, 0.952);
+            border-radius: 20px;
         }
         h1{
             font-size: 40px;
+            margin-left:30px;
+            
+        }
+        #logo{
+            display: flex;
+            align-items: center;
+        }
+        #menu{
+            /* margin-top: 10px; */
+            background-color: gold;
+            padding: 10px;
+            /* border: 1px solid; */
         }
     </style>
 </head>
 <body style="background-color: rgb(45, 124, 3);color: gold;">
     <header>
-        <h1>Pizzaria do Carlão</h1>
-        <ul>
-            <li><a href="">Promoções</a></li>
-            <li><a href="">Montar pizzas</a></li>
-            <li><a href="">Cardápio</a></li>
-            <li><a href="">Sobre</a></li>
-        </ul>
+        <div id="logo">
+            <img src="logo2.png" width="100px">
+            <h1>Pizzaria do Carlão</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Promoções</a></li>
+                <li><a href="">Montar pizzas</a></li>
+                <li><a href="">Cardápio</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <img src="pizza.avif" height="470px" width="100%">
