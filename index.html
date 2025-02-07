@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria do Carlão</title>
@@ -13,13 +14,16 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            background-color: rgba(0,0,0, 0.7);
+            background-color: rgba(0,0,0, 0.5);
             padding: 10px;
         }
         footer{
-            background-color: rgba(0,0,0, 0.7);
-            padding: 10px;
-            margin: 0;
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            background-color: rgba(1, 40, 8, 0.85);
+            padding: 15px;
+            /* margin: 0; */
         }
         img{
             margin: 0;
@@ -30,21 +34,24 @@
             padding-right: 15px;
             padding-top: 10px;
         }
-        a{
-            color: black;
+        a, a:visited{
             text-decoration: none;
+            color: inherit;
+        }
+        #menu a{
+            color: black;
             padding: 10px;
             font-size: 24px;
         }
-        a:hover{
+        #menu a:hover{
             color: white;
             background-color: rgba(9, 33, 1, 0.952);
-            border-radius: 20px;
+            border-radius: 30px;
+            transition: 0.4s;
         }
         h1{
             font-size: 40px;
-            margin-left:30px;
-            
+            margin-left:30px; 
         }
         #logo{
             display: flex;
@@ -56,14 +63,48 @@
         }
         #divf1{
             display: flex;
+            font-size: x-large;
             justify-content: space-evenly;
             padding: 20px;
             color: rgb(198, 3, 3);
+        }
+        
+        #divf1 a{
+            color: red;
+            padding: 10px; 
+            border-radius: 10px;
+        }
+        #divf1 a:visited{
+            color: red;
+        }
+        #divf1 a:hover{
+            background-color: rgba(218, 165, 32, 0.7);
+            text-decoration: none;
+            transition: 0.6s;
         }
         #divf2{
             display: flex;
             justify-content: center;
             color: white;
+            padding: 10px;
+        }
+        #arraial{
+            color: white;
+            font-size: smaller;
+        }
+        #area{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        #f1, #f2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #f1,#f2 > p{
+            padding-bottom: 15px;
         }
     </style>
 </head>
@@ -71,7 +112,7 @@
     <header>
         <div id="logo">
             <img src="logo2.png" width="100px">
-            <h1>Pizzaria do Carlão</h1>
+            <h1><a href="index.html">Pizzaria do Carlão</a></h1>
         </div>
         <div id="menu">
             <ul>
@@ -83,24 +124,39 @@
         </div>
     </header>
     <main>
-        <img src="pizza.avif" height="400px" width="100%">
+        <img src="pizza.avif" height="100%" width="100%">
 
     </main>
     <footer>
     <div id="divf1">
         <div id="f1">
+            <div id="f11">
+                <i class="material-icons" style="font-size:48px;color:red">map</i>
+            </div>
             <p>Área de entrega</p>
+            <div id="area">
+                <p id="arraial">Arraial do Cabo</p> 
+                <p id="arraial">Cabo Frio</p>
+            </div>    
+                
         </div>
         <div id="f2">
+            <div id="f22">
+                <i class="material-icons" style="font-size:48px;color:red">access_time</i>
+            </div>
             <p>Atendimento</p>
+            <div id="atendimento">
+                <p id="arraial">Atendimento de Segunda à Sábado das 18:00 às 23:00 horas</p> 
+                
+            </div>  
         </div>
         <div id="f3">
-            <p>Contato</p>
+            <p><a href="">Contato</a></p>
         </div>
     </div>
     <div id="divf2">
         <div id="f4">
-            <p style="font-size: small;">&copy; Desenvolvido por Carlos Augusto Fernandes Filho  <br>2025</p>
+            <p style="font-size: smaller;">&copy; Desenvolvido por Carlos Augusto Fernandes Filho - 2025</p>
         </div>
     </div>
         
