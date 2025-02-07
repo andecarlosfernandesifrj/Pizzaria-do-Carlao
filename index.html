@@ -25,6 +25,11 @@
             padding: 15px;
             /* margin: 0; */
         }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         img{
             margin: 0;
         }
@@ -65,7 +70,7 @@
             display: flex;
             font-size: x-large;
             justify-content: space-evenly;
-            padding: 20px;
+            padding: 5px;
             color: rgb(198, 3, 3);
         }
         
@@ -86,25 +91,43 @@
             display: flex;
             justify-content: center;
             color: white;
-            padding: 10px;
+            padding-top: 10px;
         }
-        #arraial{
+        .arraial{
             color: white;
-            font-size: smaller;
+            font-size: 16px;
         }
-        #area{
+        .area{
             display: flex;
             flex-direction: column;
             /* justify-content: center; */
             align-items: center;
         }
-        #f1, #f2{
+        #f1, #f2, #f3{
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        #f1,#f2 > p{
+        #f1 > p,#f2 > p, #f3 > p{
             padding-bottom: 15px;
+        }
+        #dev{
+            color: dodgerblue;
+        }
+        body{
+            background-image: url("pizza.avif");
+            background-repeat: no-repeat;
+            /* height: 10000px; */
+            /* background-position-x: center; */
+            background-size: cover;
+        }
+        .centro{
+            
+            background-image: radial-gradient(circle ,gray, black);
+            opacity: 0.9;
+            height: 80px;
+            width: 80%;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -124,7 +147,10 @@
         </div>
     </header>
     <main>
-        <img src="pizza.avif" height="100%" width="100%">
+        <!-- <img src="pizza.avif" height="100%" width="100%"> -->
+        <div class="centro">
+
+        </div>
 
     </main>
     <footer>
@@ -134,9 +160,9 @@
                 <i class="material-icons" style="font-size:48px;color:red">map</i>
             </div>
             <p>Área de entrega</p>
-            <div id="area">
-                <p id="arraial">Arraial do Cabo</p> 
-                <p id="arraial">Cabo Frio</p>
+            <div class="area">
+                <p class="arraial">Arraial do Cabo</p> 
+                <p class="arraial">Cabo Frio</p>
             </div>    
                 
         </div>
@@ -145,18 +171,24 @@
                 <i class="material-icons" style="font-size:48px;color:red">access_time</i>
             </div>
             <p>Atendimento</p>
-            <div id="atendimento">
-                <p id="arraial">Atendimento de Segunda à Sábado das 18:00 às 23:00 horas</p> 
+            <div class="area">
+                <p class="arraial">Atendimento de Segunda à Sábado das 18:00 às 23:00 horas</p> 
                 
             </div>  
         </div>
         <div id="f3">
-            <p><a href="">Contato</a></p>
+            <div id="f33">
+                <i class="material-icons" style="font-size:48px;color:red">person_add</i>
+            </div>
+            <p>Contato</p>
+            <div class="area">
+                <p class="arraial">Compre também pelo telefone</p>    
+            </div>
         </div>
     </div>
     <div id="divf2">
         <div id="f4">
-            <p style="font-size: smaller;">&copy; Desenvolvido por Carlos Augusto Fernandes Filho - 2025</p>
+            <p style="font-size: smaller;">&copy; Desenvolvido por <a id="dev" href="https://github.com/andecarlosfernandesifrj">Carlos Augusto Fernandes Filho</a> - 2025</p>
         </div>
     </div>
         
